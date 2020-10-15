@@ -1,0 +1,9 @@
+<p><%=link_to "Create user", new_user_path%></p>
+<%if @users.size==0%>
+<p>No users</p>
+<%else%>
+<%@users.each  do |user| %>
+  <p><%=link_to user.name, user_path(user)%></p>
+<% end%>
+<%end%>
+<%=link_to "Home", root_path%>

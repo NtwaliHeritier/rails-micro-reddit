@@ -1,0 +1,12 @@
+<p><%=link_to "Create a user", new_user_path%></p>
+<p><%=link_to "Create a post", new_post_path%></p>
+<%if @posts.nil?%>
+<p>No posts yet</p>
+<%else%>
+<%@posts.each  do |post| %>
+  <p><%=link_to post.title, post_path(post)%></p>
+  <p>Content: <%=post.body%></p>
+  <p><%=post.comments.size%> comments <%=link_to "View", post_comments_path(post)%></p>
+  <p>--------------------------</p>
+<% end%>
+<%end%>
