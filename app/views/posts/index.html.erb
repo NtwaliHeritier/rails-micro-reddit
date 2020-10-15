@@ -1,0 +1,10 @@
+<p><%=link_to "Create a post", new_post_path%></p>
+<%if @posts.nil?%>
+<p>No posts yet</p>
+<%else%>
+<%@posts.each  do |post| %>
+  <p>Title: <%=post.title%></p>
+  <p>Content: <%=post.body%></p>
+  <p>--------------------------</p>
+<% end%>
+<%end%>

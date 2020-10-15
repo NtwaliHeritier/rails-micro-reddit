@@ -1,7 +1,5 @@
+<p><%=link_to "Create user", new_user_path%></p>
 <%@users.each  do |user| %>
-
-  <p><%= user.name %></p>
-  <p><%= user.username%></p>
-  <p><%= user.password %></p>
-  <p><%= user.country %></p>
-   <% end%>
+  <p><%=link_to user.name, user_path(user)%></p>
+<% end%>
+<%=link_to "Home", root_path%>
