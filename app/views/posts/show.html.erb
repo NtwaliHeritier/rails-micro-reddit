@@ -1,0 +1,6 @@
+<p>Author: <%=@post.user.name%></p>
+<p>Title: <%=@post.title%></p>
+<p>Content: <%=@post.body%></p>
+<%=render partial: 'comments/form'%>
+
+<%=link_to "Back", root_path%>
