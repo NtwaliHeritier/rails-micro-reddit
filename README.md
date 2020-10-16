@@ -68,7 +68,7 @@ __NOTE:__ To test if validations are working, just try to violate any requiremen
 
 - Github: [@githubhandle](https://github.com/NtwaliHeritier)
 - Twitter: [@twitterhandle](https://twitter.com/NtwaliHeritier)
-- Linkedin: [linkedin](https://linkedin.com/in/ntwali-heritier-9950001a2)
+- Linkedin: [linkedin](https://www.linkedin.com/in/ntwaliheritier/)
 
 👤 **Popoola Grace Boluwatife**
 
