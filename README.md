@@ -31,6 +31,37 @@ This project is for learning purpose just to understand active records.In it, we
 
 7. In the browser run `localhost:3000`.
 
+### Testing in the terminal
+1. Run `rails console` to start the console linked to this app
+
+#### Commands for testing the functionality
+**To create a new user**
+> user = User.create({name: 'user_1_name', username: 'user_1_username', password: 'password_of_user', country: 'user_country'})
+
+##### Requirements
+=>name, username, password, country are required
+
+**To create a new post**
+> post = Post.create({ title: 'post_1', body: 'This is post_1', user: 1})
+
+##### Requirements
+=> title, body, user_id are required
+
+=> user_id should be an integer and exists in table of users
+
+**To create comment**
+=> comment = Comment.create({ author: 'author_name', body: 'This is a comment', post: post_1})
+
+##### Requirements
+=> author, body, post are required
+
+__NOTE:__ To test if validations are working, just try to violate any requirement on any command, and see what happens
+
+#### To test associations
+
+1. User and Post models: run `User.first.posts` or `Post.first.user
+
+
 ## Authors
 
 👤 **Ntwali Heritier**
