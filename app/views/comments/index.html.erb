@@ -3,7 +3,7 @@
     <p>No Comments</p>
 <%else%>
     <%@comments.each do |c|%>
-        <p>Author: <%=c.author%></p>
+        <p>Author: <%=c.user.name%></p>
         <p>Comment: <%=c.body%></p>
         <p>----------</p>
     <%end%>
